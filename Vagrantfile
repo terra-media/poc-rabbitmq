@@ -2,12 +2,14 @@ Vagrant.configure("2") do |config|
 
     box = "hashicorp/precise64"
 
-    config.vm.define "node1" do |web|
-        web.vm.box = box 
+    config.vm.define "node1" do |node1|
+        node1.vm.box = box 
+        node1.vm.network :private_network, ip: '192.168.0.10'
     end
 
-    config.vm.define "node2" do |db|
-        db.vm.box = box
+    config.vm.define "node2" do |node2|
+        node2.vm.box = box
+        node2.vm.network :private_network, ip: '192.168.0.20'
     end
 end
 
