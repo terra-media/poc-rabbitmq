@@ -22,10 +22,9 @@ node2                     running (virtualbox)
   vagrant ssh node2
 ```
 <h6>Acesso ao RabbitMQ Management</h6>
+[http://192.168.0.100:15672/](http://192.168.0.100:15672/) <br/>
+[http://192.168.0.200:15672/](http://192.168.0.200:15672/)
 ```
-[a link](http://192.168.0.100:15672/)
-[a link](http://192.168.0.200:15672/)
-<br/>
 Usuário: guest
 Senha: guest
 ```
